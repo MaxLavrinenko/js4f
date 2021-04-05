@@ -161,12 +161,13 @@
 // let objArr = [{name:'Dima',age:30,},{car:'Toyota', model:'Camry'},{name:'Oleg', age: 33},{car:'Honda', model:'Civic'}]
 // function keyArray(arrays = []){
 //     let keyArr = [];
+//     let sw = confirm('"Ok" = Value , Canсel = Kеy');
 //     for (const array of arrays) {
 //         for(arr in array){
-//             keyArr.push(array[arr]);
+//             sw === true? keyArr.push(array[arr]) : keyArr.push(arr);
+//             }
 //         }
-//     }
 //     return keyArr;
-// }
+//     }
 // let keyArr = keyArray(objArr);
 // console.log(keyArr);
