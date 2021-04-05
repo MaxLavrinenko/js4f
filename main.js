@@ -133,3 +133,40 @@
 // }
 // arrSum(arr1,arr2);
 // console.log(arrsum);
+
+//////============================================================================
+//- створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
+// а виводить найбільше (Math використовувати заборонено);
+// let arr = [2,4,6,8,54,67,345,318];
+// function myFunction (array = []){
+//     let min =array[0];
+//     let max =array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         if( array[i]>max){
+//             max = array[i];
+//         }
+//         if( array[i]<min){
+//             min = array[i];
+//         }
+//     }
+//     console.log(max);
+//     return min;
+// }
+// let maxMin = myFunction(arr);
+// console.log(maxMin);
+// /////////////////////////////////////////////////
+
+//- Взяти задачі з завдання 10 та 9 та обєднати їх в одну динамічну функцію.
+ // Що б я міг сам вибрати повернути мені масив ключів чи масив значень.
+// let objArr = [{name:'Dima',age:30,},{car:'Toyota', model:'Camry'},{name:'Oleg', age: 33},{car:'Honda', model:'Civic'}]
+// function keyArray(arrays = []){
+//     let keyArr = [];
+//     for (const array of arrays) {
+//         for(arr in array){
+//             keyArr.push(array[arr]);
+//         }
+//     }
+//     return keyArr;
+// }
+// let keyArr = keyArray(objArr);
+// console.log(keyArr);
