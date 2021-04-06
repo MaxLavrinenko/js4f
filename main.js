@@ -171,3 +171,22 @@
 //     }
 // let keyArr = keyArray(objArr);
 // console.log(keyArr);
+////////////////////////////////////////////
+//- Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+  //EXAMPLE:
+  //foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+  //foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+  //foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ] 
+// let arr = [9,8,0,4];
+// function foo (array =[],index){
+//     for (let i = 0; i<array.length;i++){
+//         let sh = array[i];
+//         if ( i === index){
+//             array[i] = array[i + 1];
+//             array[i + 1] = sh
+//         }
+//     }
+// return array;
+// }
+// let res = foo(arr,2);
+// console.log(res);
