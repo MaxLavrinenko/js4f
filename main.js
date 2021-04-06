@@ -7,7 +7,7 @@
 // //myFuncArr(randomArr);
 // //////////////////////////////////////////////////////////
 
-// // 2) створити функцію яка заповнює масив рандомними числами та виводить його.
+//  2) створити функцію яка заповнює масив рандомними числами та виводить його.
 // // Для виведення використати попередню функцію.
 // let randomArr = [];
 // function random(random = []){
@@ -31,6 +31,7 @@
 //             min = array[i];
 //         }
 //     }
+//     console.log(min);
 //     return min;
 // }
 // let minimal = min(arr);
@@ -47,6 +48,7 @@
 //             max = array[i];
 //         }
 //     }
+//     console.log(max);
 //     return max;
 // }
 //
@@ -171,7 +173,10 @@
 //     }
 // let keyArr = keyArray(objArr);
 // console.log(keyArr);
-////////////////////////////////////////////
+/////////////////////////////////
+
+
+
 //- Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
   //EXAMPLE:
   //foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
@@ -190,3 +195,49 @@
 // }
 // let res = foo(arr,2);
 // console.log(res);
+
+//- Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+// let arr = [0,1,2,3,4];
+// function zero (array = []){
+//     let number = [];
+//     let zero = [];
+//     for (let arrayElement of array) {
+//         if( arrayElement === 0){
+//             zero.push(arrayElement);}
+//             else{
+//                 number.push(arrayElement);
+//             }
+//         }
+//     return number.concat(zero);
+// }
+// let zeroArr = zero(arr);
+// console.log(zeroArr);
+
+//- Дано список імен.
+// let n1 = '    Harry       Potter      '
+// let n2 = '    Ron       Whisley      '
+// let n3 = '    Hermione       Granger      '
+//Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+// let n1 = 'Harry Potter'
+// let n2 = 'Ron Whisley'
+// let n3 = 'Hermione Granger'
+//
+// function normalizator (name){
+//     name = name.split(' ')
+//     let normName = [];
+//     for (let i = 0; i < name.length; i++) {
+//         //const nameElement = name[i];
+//         if(name[i] !== ""){
+//            normName +=` ${name[i]}`
+//         }
+//     }
+//     return normName.trim();
+// }
+// name = normalizator(n3);
+// console.log(name);
+/////////////////////////////////////////
